@@ -1,6 +1,6 @@
 Music Genre Classifier Project
 Overview
-This project develops a neural network-based system to classify music genres from audio spectrograms. Using deep learning, the system learns to recognize distinct features in spectrogram images corresponding to various music genres such as pop, metal, classical, and more.
+This project develops a neural network-based system to classify music genres from audio spectrograms. Using deep learning, the system learns to recognize distinct features in spectrogram images corresponding to various music genres such as pop, metal, classical, and more. Not only that to genre, but also as a sound source to convert into classification section if possible due to noise and various effects.
 
 Background
 The motivation behind this project is to explore the applications of convolutional neural networks (CNNs) in audio analysis, specifically for the task of music genre classification. The project uses spectrograms of music tracks as the input data, transforming the audio problem into a visual one, which is a typical approach for applying CNNs effectively.
