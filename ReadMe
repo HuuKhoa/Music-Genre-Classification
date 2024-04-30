@@ -23,7 +23,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install required libraries:
 
-pip install numpy matplotlib keras tensorflow jupyter deeplake librosa
+pip install numpy matplotlib keras tensorflow jupyter deeplake librosa av
 Running Jupyter Notebook
 After installing the dependencies, run Jupyter Notebook:
 
