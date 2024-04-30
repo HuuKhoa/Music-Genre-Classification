@@ -1,5 +1,5 @@
-Music Genre Classifier Project
-Authors: Logan Wolff, Anthony Barbaro, Bryle Ong, Khoa Hoang, Huu-Khoa Nguyen
+# Music Genre Classifier Project
+## Authors: Logan Wolff, Anthony Barbaro, Bryle Ong, Khoa Hoang, Huu-Khoa Nguyen
 
 ### Overview
 This project develops a neural network-based system to classify music genres from audio spectrograms. Using deep learning, the system learns to recognize distinct features in spectrogram images corresponding to various music genres such as pop, metal, classical, and more. Not only that to genre, but also as a sound source to convert into classification section if possible due to noise and various effects.
