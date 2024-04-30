@@ -14,20 +14,18 @@ Dependencies
 The project depends on several Python libraries, which can be installed using pip. Here is a step-by-step guide:
 
 Clone the repository:
-
-
 git clone <https://github.com/HuuKhoa/Music-Genre-Classification/>
 cd <https://github.com/HuuKhoa/Music-Genre-Classification/>
 Create a virtual environment (recommended):
 
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
 Install required libraries:
-
 pip install numpy matplotlib keras tensorflow jupyter deeplake librosa av
-Running Jupyter Notebook
-After installing the dependencies, run Jupyter Notebook:
 
+### Running Jupyter Notebook
+After installing the dependencies, run Jupyter Notebook:
 
 jupyter notebook
 This command will start the Jupyter Notebook server and open a browser window where you can navigate and open the project notebooks.
