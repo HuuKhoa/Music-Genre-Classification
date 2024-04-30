@@ -13,24 +13,23 @@ Ensure you have Python 3.7 or later installed on your system. Python can be down
 Dependencies
 The project depends on several Python libraries, which can be installed using pip. Here is a step-by-step guide:
 
-Clone the repository:
+# Clone the repository:
 git clone <https://github.com/HuuKhoa/Music-Genre-Classification/>
 cd <https://github.com/HuuKhoa/Music-Genre-Classification/>
-Create a virtual environment (recommended):
 
+# Create a virtual environment (recommended):
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-Install required libraries:
+# Install required libraries:
 pip install numpy matplotlib keras tensorflow jupyter deeplake librosa av
 
-### Running Jupyter Notebook ###
+# Running Jupyter Notebook
 After installing the dependencies, run Jupyter Notebook:
-
 jupyter notebook
 This command will start the Jupyter Notebook server and open a browser window where you can navigate and open the project notebooks.
 
-Usage
+# Usage
 Data Preparation
 Prepare your dataset: Ensure your spectrogram images are formatted and labeled correctly as per the guidelines provided in data_prep.ipynb.
 Run the data_prep.ipynb: This notebook will guide you through loading, processing, and splitting the data for training and testing.
@@ -40,13 +39,13 @@ Evaluate the model: The notebook includes steps to evaluate the model's performa
 Data
 The project assumes a dataset of audio spectrograms categorized by music genres. For best results, ensure the spectrograms are uniformly sized and properly labeled. The format and preparation of the dataset are critical for successful training and classification.
 
-Contributing
+# Contributing
 Contributors are welcome to propose improvements to the codebase, add new features, or enhance the documentation. To contribute:
+- Fork the repository.
+- Create a new branch for your feature (git checkout -b feature/AmazingFeature).
+- Commit your changes (git commit -m 'Add some AmazingFeature').
+- Push to the branch (git push origin feature/AmazingFeature).
+- Open a pull request.
 
-Fork the repository.
-Create a new branch for your feature (git checkout -b feature/AmazingFeature).
-Commit your changes (git commit -m 'Add some AmazingFeature').
-Push to the branch (git push origin feature/AmazingFeature).
-Open a pull request.
-License
+# License
 This project is licensed under the MIT License - see the  LICENSE.md file for details.
