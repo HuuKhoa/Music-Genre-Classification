@@ -31,14 +31,19 @@ jupyter notebook
 This command will start the Jupyter Notebook server and open a browser window where you can navigate and open the project notebooks.
 
 ### Usage
-Data Preparation
-Prepare your dataset: Ensure your spectrogram images are formatted and labeled correctly as per the guidelines provided in data_prep.ipynb.
-Run the data_prep.ipynb: This notebook will guide you through loading, processing, and splitting the data for training and testing.
+Just run the code blocks in order from top to bottom. The code is well documented to explain what you're doing each step of the way. It goes something like this:
+- Load the dataset from deeplake
+- Prepare your dataset/preprocessing the data: Ensure your spectrogram images are formatted and labeled correctly--loading, processing, and splitting the data for training and testing.
 Model Training and Evaluation
-Open musicgenreclassifierV2.ipynb: Follow the steps outlined to train the model using the preprocessed data.
-Evaluate the model: The notebook includes steps to evaluate the model's performance on a test set and visualize the results.
+- Follow the steps outlined to train the model using the preprocessed data (mel spectrograms and MFCCs).
+- We test K Nearest Neighbors Algorithm, but this is our failed approach. The next and final approach we have is the Convolutional Neural Network.
+- Evaluate the model: The notebook includes steps to evaluate the model's performance on a test set and visualize the results.
 Data
-The project assumes a dataset of audio spectrograms categorized by music genres. For best results, ensure the spectrograms are uniformly sized and properly labeled. The format and preparation of the dataset are critical for successful training and classification.
+- The project assumes a dataset of audio tensors, which are preprocessed into spectrograms and MFCCs categorized by music genres.
+Additional Notes
+- Some of the code blocks take minutes to run--namely the conversion of audio tensors to spectrograms and MFCCs.
+- Training the CNN takes at least 10 minutes.
+- musicgenreclassifier.ipynb and data_prep.ipynb are similar files that do the same thing, which is process the data, create a KNN and test it, and create a CNN and test it.
 
 ### Contributing
 Contributors are welcome to propose improvements to the codebase, add new features, or enhance the documentation. To contribute:
@@ -49,4 +54,4 @@ Contributors are welcome to propose improvements to the codebase, add new featur
 - Open a pull request.
 
 ### License
-This project is licensed under the MIT License - see the  LICENSE.md file for details.
+This project is licensed under the MIT License
